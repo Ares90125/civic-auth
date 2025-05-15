@@ -62,7 +62,6 @@ export const getTokenBalances = async (
     },
   ];
 
-  console.log(balances, address.toBase58());
   let cursor: string | null = null;
 
   while (true) {

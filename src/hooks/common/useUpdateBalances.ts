@@ -9,7 +9,6 @@ import { HELIUS_RPC_URL } from "@/utils/constants";
 import { getAssetBatch, getTokenBalances } from "@/utils/functions";
 
 const updateBalance = async (connection: Connection, publicKey: PublicKey) => {
-  console.log(connection);
   const balances = getTokenBalances(connection, publicKey);
   return balances;
 };
