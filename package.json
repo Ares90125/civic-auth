@@ -11,6 +11,8 @@
   "dependencies": {
     "@civic/auth-web3": "^0.5.8",
     "@radix-ui/react-slot": "^1.2.2",
+    "@solana/spl-token": "^0.4.13",
+    "@solana/web3.js": "^1.98.2",
     "@tanstack/query-sync-storage-persister": "^5.76.0",
     "@tanstack/react-query": "^5.76.0",
     "@tanstack/react-query-devtools": "^5.76.0",
@@ -19,6 +21,7 @@
     "classnames": "^2.5.1",
     "clsx": "^2.1.1",
     "jotai": "^2.12.4",
+    "jotai-optics": "^0.4.0",
     "lucide-react": "^0.510.0",
     "next": "15.3.2",
     "react": "^19.0.0",

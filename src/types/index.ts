@@ -5,3 +5,20 @@ export interface ExtraTWClassProps {
 }
 
 export type ComponentProps = PropsWithChildren<ExtraTWClassProps>;
+
+export type RpcResponse<T> = {
+  result: T;
+};
+
+export type TokenBalance = {
+  id: string;
+  token_info: {
+    balance: number;
+    decimals?: number;
+  };
+};
+
+export type SearchAssetsResponse = {
+  cursor?: string;
+  items: TokenBalance[];
+};

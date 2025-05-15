@@ -3,7 +3,7 @@ import { PAGE_TITLE_HOME, META_DESCRIPTION } from "@/utils/metadata";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: { default: PAGE_TITLE_HOME + " | civic", template: "%s | civic" },
+  title: { default: PAGE_TITLE_HOME + " | Civic", template: "%s | Civic" },
   description: META_DESCRIPTION,
 };
 

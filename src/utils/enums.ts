@@ -1,0 +1,6 @@
+export enum EXPLORER_TYPE {
+  SOLSCAN,
+  SOLANA_EXPLORER,
+  SOLANA_FM,
+  BIRDEYE,
+}
