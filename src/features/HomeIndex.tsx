@@ -14,7 +14,7 @@ export default function HomeIndex() {
 
   const transforSol = async () => {
     if (userHasWallet(userContext) && connection && address) {
-      const { sendTransaction } = userContext!.solana.wallet;
+      const wallet = userContext!.solana.wallet;
       const transaction = new Transaction().add(
         SystemProgram.transfer({
           fromPubkey: address,
@@ -24,7 +24,7 @@ export default function HomeIndex() {
           lamports: 1000000,
         })
       );
-      const signature = await sendTransaction(transaction, connection);
+      const signature = await wallet.sendTransaction(transaction, connection);
       console.log(signature);
     }
   };
